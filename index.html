@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музей аудио-галерея — Исаак Левитан</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+
+        .page-heading {
+            margin-top: 90px;
+        }
+
+        .card img {
+            max-height: calc(100vh - 340px);
+            min-height: 220px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .thumb-wrap {
+            background-color: #1f3a34;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header" id="top">
+        <div class="container">
+            <h1 class="site-title"><a href="index.html">Музейная аудио-галерея</a></h1>
+            <p class="site-subtitle">Картины Исаака Левитана с аудио-гидом</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="page-heading">Исаак Левитан. Избранные картины</h2>
+        <p class="intro">Выберите картину, чтобы рассмотреть её крупно, прочитать описание и послушать аудио-гид.</p>
+
+        <article class="card">
+            <a class="card-link" href="page-1.html">
+                <figure>
+                    <div class="thumb-wrap"><img src="img/thumb-1.jpg" alt="Картина «Золотая осень» — берёзы над синей рекой"></div>
+                    <figcaption>
+                        <p class="author">Исаак Левитан, 1895</p>
+                        <h2>Золотая осень</h2>
+                        <p class="fragment">Яркие золотые берёзы отражаются в тёмной воде реки. Картина написана в 1895 году и считается одним из самых радостных осенних пейзажей художника…</p>
+                        <p class="more">Смотреть картину и слушать аудио-гид</p>
+                    </figcaption>
+                </figure>
+            </a>
+        </article>
+
+        <article class="card">
+            <a class="card-link" href="page-2.html">
+                <figure>
+                    <div class="thumb-wrap"><img src="img/thumb-2.jpg" alt="Картина «Март» — лошадь у дома, тающий снег"></div>
+                    <figcaption>
+                        <p class="author">Исаак Левитан, 1895</p>
+                        <h2>Март</h2>
+                        <p class="fragment">Солнечный день ранней весны: снег тает и блестит, у дома стоит лошадь, а тени на снегу кажутся голубыми. Картина создана в 1895 году…</p>
+                        <p class="more">Смотреть картину и слушать аудио-гид</p>
+                    </figcaption>
+                </figure>
+            </a>
+        </article>
+
+        <article class="card">
+            <a class="card-link" href="page-3.html">
+                <figure>
+                    <div class="thumb-wrap"><img src="img/thumb-3.jpg" alt="Картина «Над вечным покоем» — церковь на холме над озером"></div>
+                    <figcaption>
+                        <p class="author">Исаак Левитан, 1894</p>
+                        <h2>Над вечным покоем</h2>
+                        <p class="fragment">Маленькая церковь на обрыве, огромное озеро и тяжёлые грозовые тучи. Левитан писал эту картину в 1894 году и считал её самой важной для себя…</p>
+                        <p class="more">Смотреть картину и слушать аудио-гид</p>
+                    </figcaption>
+                </figure>
+            </a>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Контакты: <a href="mailto:egornovik@gmail.com">egornovik@gmail.com</a></p>
+            <p>Телефон: +375 (00) 000-00-00</p>
+            <p>Автор сайта: Егор Новик, студент 1 курса, группа 9</p>
+        </div>
+    </footer>
+
+    <a class="up-button" href="#top" aria-label="Вверх" title="Вверх">&uarr;</a>
+
+    <script>
+        var upButton = document.querySelector(".up-button");
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 200) {
+                upButton.classList.add("visible");
+            } else {
+                upButton.classList.remove("visible");
+            }
+        });
+    </script>
+
+</body>
+</html>
